@@ -53,6 +53,7 @@ public class Persona {
 
 	public void setId(Integer id) {
 		this.id = id;
+		domicilio.setPersona_id(id);
 	}
 
 	public String getNombres() {
@@ -79,6 +80,18 @@ public class Persona {
 		this.ciudad = ciudad;
 	}
 	
+	/**
+	 * getPersona_id
+	 * 
+	 * Se obtiene el identificador del domicilio, que es el
+	 * identificador de persona.
+	 * 
+	 * @return Integer persona_id
+	 */
+	public Integer getPersona_id() {
+		return domicilio.getPersona_id();
+	}
+
 	public String getCalles() {
 		return domicilio.getCalles();
 	}
